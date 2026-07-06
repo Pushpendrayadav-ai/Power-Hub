@@ -1,0 +1,259 @@
+/* ============================================
+   PowerHub — shared styles
+   Loaded on top of Bootstrap 5 (grid + utilities only).
+   Edit the variables below to re-theme the whole site.
+   ============================================ */
+
+:root {
+  --ph-bg: #14171a;
+  --ph-surface: #1e2226;
+  --ph-surface-2: #262b30;
+  --ph-line: #33393e;
+  --ph-text: #f2f1ec;
+  --ph-muted: #9aa0a6;
+  --ph-yellow: #f5c21b;   /* plate / accent */
+  --ph-red: #ef3e36;      /* sale / energy  */
+  --ph-green: #3ecf6b;    /* in-stock / success */
+  --radius: 6px;
+  --font-display: "Oswald", sans-serif;
+  --font-body: "Work Sans", sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  background: var(--ph-bg);
+  color: var(--ph-text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, .display {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+}
+
+a { color: var(--ph-yellow); text-decoration: none; }
+a:hover { color: #ffd54d; }
+
+/* ---------- Top bar ---------- */
+.ph-topbar {
+  background: var(--ph-red);
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 6px 12px;
+  letter-spacing: 0.03em;
+}
+
+/* ---------- Header ---------- */
+.ph-header {
+  background: var(--ph-surface);
+  border-bottom: 3px solid var(--ph-yellow);
+  padding: 14px 0;
+}
+.ph-logo {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--ph-text);
+}
+.ph-logo span { color: var(--ph-yellow); }
+
+.ph-search {
+  background: var(--ph-surface-2);
+  border: 1px solid var(--ph-line);
+  border-radius: var(--radius);
+  color: var(--ph-text);
+  padding: 10px 14px;
+}
+.ph-search::placeholder { color: var(--ph-muted); }
+
+.ph-nav a {
+  color: var(--ph-text);
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  margin-left: 22px;
+}
+.ph-nav a:hover { color: var(--ph-yellow); }
+
+.ph-cart-count {
+  background: var(--ph-yellow);
+  color: #14171a;
+  font-weight: 700;
+  font-size: 0.7rem;
+  border-radius: 50%;
+  padding: 1px 6px;
+  vertical-align: top;
+}
+
+/* ---------- Buttons ---------- */
+.btn-ph {
+  font-family: var(--font-display);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-radius: var(--radius);
+  padding: 11px 22px;
+  border: 2px solid var(--ph-yellow);
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+.btn-ph-solid {
+  background: var(--ph-yellow);
+  color: #14171a;
+}
+.btn-ph-solid:hover { background: #ffd54d; color: #14171a; transform: translateY(-1px); }
+.btn-ph-outline {
+  background: transparent;
+  color: var(--ph-text);
+}
+.btn-ph-outline:hover { background: var(--ph-yellow); color: #14171a; }
+
+/* ---------- Hero ---------- */
+.ph-hero {
+  background: linear-gradient(120deg, #1a1e22 60%, #22272c 100%);
+  border: 1px solid var(--ph-line);
+  border-radius: 10px;
+  padding: 56px 48px;
+  position: relative;
+  overflow: hidden;
+}
+.ph-hero::after {
+  content: "";
+  position: absolute;
+  right: -60px; top: -60px;
+  width: 260px; height: 260px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(245,194,27,0.16), transparent 70%);
+}
+.ph-tag {
+  display: inline-block;
+  background: var(--ph-yellow);
+  color: #14171a;
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  padding: 4px 12px;
+  border-radius: 3px;
+  margin-bottom: 14px;
+}
+.ph-hero h1 {
+  font-size: 3rem;
+  line-height: 1.05;
+  margin-bottom: 14px;
+}
+.ph-hero p { color: var(--ph-muted); max-width: 480px; }
+
+/* plate stack graphic used as the hero's signature element */
+.ph-plate-stack { display: flex; align-items: center; justify-content: center; height: 100%; }
+.ph-plate {
+  border-radius: 50%;
+  border: 6px solid var(--ph-yellow);
+  background: var(--ph-surface-2);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--ph-muted); font-family: var(--font-display); font-size: 0.75rem;
+}
+
+/* ---------- Category / info strip ---------- */
+.ph-strip {
+  border-top: 1px solid var(--ph-line);
+  border-bottom: 1px solid var(--ph-line);
+  padding: 12px 0;
+  font-size: 0.85rem;
+  color: var(--ph-muted);
+}
+
+/* ---------- Cards ---------- */
+.ph-card {
+  background: var(--ph-surface);
+  border: 1px solid var(--ph-line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  height: 100%;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.ph-card:hover { border-color: var(--ph-yellow); transform: translateY(-3px); }
+.product-image {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.ph-card-media {
+  aspect-ratio: 4 / 3;
+  display: flex; align-items: center; justify-content: center;
+  flex-direction: column;
+  gap: 6px;
+  color: rgba(242,241,236,0.55);
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  position: relative;
+}
+.ph-badge {
+  position: absolute; top: 10px; left: 10px;
+  font-size: 0.65rem; font-weight: 700; letter-spacing: 0.05em;
+  padding: 3px 9px; border-radius: 3px; text-transform: uppercase;
+}
+.ph-badge-new { background: var(--ph-green); color: #0e1b12; }
+.ph-badge-hot { background: var(--ph-red); color: #fff; }
+
+.ph-card-body { padding: 16px; }
+.ph-brand { color: var(--ph-muted); font-size: 0.78rem; }
+.ph-price-old { color: var(--ph-muted); text-decoration: line-through; font-size: 0.85rem; }
+.ph-price-off { color: var(--ph-yellow); font-size: 0.85rem; font-weight: 600; }
+.ph-stars { color: var(--ph-yellow); font-size: 0.85rem; }
+
+/* ---------- Forms ---------- */
+.ph-field label { font-size: 0.85rem; color: var(--ph-muted); margin-bottom: 6px; display: block; }
+.ph-field input, .ph-field textarea, .ph-field select {
+  width: 100%;
+  background: var(--ph-surface-2);
+  border: 1px solid var(--ph-line);
+  border-radius: var(--radius);
+  color: var(--ph-text);
+  padding: 11px 14px;
+}
+.ph-field input:focus, .ph-field textarea:focus, .ph-field select:focus {
+  outline: none;
+  border-color: var(--ph-yellow);
+  box-shadow: 0 0 0 3px rgba(245,194,27,0.18);
+}
+
+/* ---------- Summary / cart panel ---------- */
+.ph-panel {
+  background: var(--ph-surface);
+  border: 1px solid var(--ph-line);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+.ph-row { display: flex; justify-content: space-between; padding: 8px 0; }
+.ph-row.total { border-top: 1px solid var(--ph-line); margin-top: 8px; padding-top: 14px; font-family: var(--font-display); font-size: 1.15rem; }
+
+/* ---------- Footer ---------- */
+.ph-footer {
+  background: #0f1214;
+  border-top: 3px solid var(--ph-yellow);
+  padding: 48px 0 24px;
+  margin-top: 64px;
+  color: var(--ph-muted);
+}
+.ph-footer h6 {
+  font-family: var(--font-display);
+  color: var(--ph-text);
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 14px;
+}
+.ph-footer a { color: var(--ph-muted); }
+.ph-footer a:hover { color: var(--ph-yellow); }
+.ph-fine { font-size: 0.78rem; border-top: 1px solid #23272a; padding-top: 18px; margin-top: 28px; }
+
+/* ---------- misc ---------- */
+.ph-section-title {
+  border-left: 4px solid var(--ph-yellow);
+  padding-left: 12px;
+  margin-bottom: 24px;
+}
