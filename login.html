@@ -1,73 +1,76 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>Login — PowerHub</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Login — PowerHub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
 
-<header class="ph-header">
-  <div class="container d-flex align-items-center justify-content-between flex-wrap gap-3">
-    <a href="index.html" class="ph-logo">Power<span>Hub</span>.</a>
-    <div class="flex-grow-1 mx-4" style="max-width:480px;">
-      <input class="ph-search w-100" type="text" placeholder="Search protein, dumbbells, mats...">
+  <header class="ph-header">
+    <div class="container d-flex align-items-center justify-content-between flex-wrap gap-3">
+      <a href="index.html" class="ph-logo">Power<span>Hub</span>.</a>
+      <div class="flex-grow-1 mx-4" style="max-width:480px;">
+        <input class="ph-search w-100" type="text" placeholder="Search protein, dumbbells, mats...">
+      </div>
+      <nav class="ph-nav d-flex align-items-center">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="help.html">Help</a>
+        <a href="login.html">Login</a>
+        <a href="cart.html">Cart <span class="ph-cart-count">3</span></a>
+      </nav>
     </div>
-    <nav class="ph-nav d-flex align-items-center">
-      <a href="index.html">Home</a>
-      <a href="shop.html">Shop</a>
-      <a href="help.html">Help</a>
-      <a href="login.html">Login</a>
-      <a href="cart.html">Cart <span class="ph-cart-count">3</span></a>
-    </nav>
-  </div>
-</header>
+  </header>
 
-<main class="container my-5">
-  <div class="row g-0 mx-auto ph-card" style="max-width:900px;">
+  <main class="container my-5">
+    <div class="row g-0 mx-auto ph-card" style="max-width:900px;">
 
-    <div class="col-md-6 p-5 d-flex flex-column justify-content-center" style="background:linear-gradient(135deg,#1a2e1e,#14171a);">
-      <h2>Back for<br>Another Set 💪</h2>
-      <p class="text-body-secondary">Log in to track orders, reorder your stack and check out faster.</p>
-      <div class="ph-card-media mt-3" style="background:#2a2f22;height:160px;border-radius:6px;">🥤 Whey Protein</div>
-    </div>
+      <div class="col-md-6 p-5 d-flex flex-column justify-content-center"
+        style="background:linear-gradient(135deg,#1a2e1e,#14171a);">
+        <h2>Back for<br>Another Set 💪</h2>
+        <p class="text-body-secondary">Log in to track orders, reorder your stack and check out faster.</p>
+        <div class="ph-card-media mt-3" style="background:#2a2f22;height:160px;border-radius:6px;">Whey Protein</div>
+      </div>
 
-    <div class="col-md-6 p-5">
-      <h3 class="h4">Login to PowerHub</h3>
-      <p class="text-body-secondary mb-4">Enter your details to continue.</p>
+      <div class="col-md-6 p-5">
+        <h3 class="h4">Login to PowerHub</h3>
+        <p class="text-body-secondary mb-4">Enter your details to continue.</p>
 
-      <form>
-        <div class="ph-field mb-3">
-          <label>Email address</label>
-          <input type="email" placeholder="you@email.com">
-        </div>
-        <div class="ph-field mb-2">
-          <label>Password</label>
-          <input type="password" placeholder="••••••••">
-        </div>
-        <div class="d-flex justify-content-between align-items-center mb-4">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" checked>
-            <label class="form-check-label small">Remember me</label>
+        <form>
+          <div class="ph-field mb-3">
+            <label>Email address</label>
+            <input type="email" placeholder="you@gmail.com">
           </div>
-          <a href="#" class="small">Forgot password?</a>
-        </div>
-        <button type="submit" class="btn-ph btn-ph-solid w-100">Login</button>
-        <p class="text-center small mt-3">New to PowerHub? <a href="#">Create an account</a></p>
-      </form>
+          <div class="ph-field mb-2">
+            <label>Password</label>
+            <input type="password" placeholder="••••••••">
+          </div>
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" checked>
+              <label class="form-check-label small">Remember me</label>
+            </div>
+            <a href="#" class="small">Forgot password?</a>
+          </div>
+          <button type="submit" class="btn-ph btn-ph-solid w-100">Login</button>
+          <p class="text-center small mt-3">New to PowerHub? <a href="#">Create an account</a></p>
+        </form>
+      </div>
+
     </div>
+  </main>
 
-  </div>
-</main>
-
-<footer class="ph-footer">
-  <div class="container">
-    <div class="ph-fine text-center">© 2026 PowerHub Retail Pvt. Ltd. · Built with HTML, CSS &amp; Bootstrap.</div>
-  </div>
-</footer>
+  <footer class="ph-footer">
+    <div class="container">
+      <div class="ph-fine text-center">© 2026 PowerHub Retail Pvt. Ltd. · Built with HTML, CSS &amp; Bootstrap.</div>
+    </div>
+  </footer>
 
 </body>
+
 </html>

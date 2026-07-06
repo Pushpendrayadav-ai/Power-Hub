@@ -1,118 +1,130 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>Your Cart — PowerHub</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Your Cart — PowerHub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
 
-<header class="ph-header">
-  <div class="container d-flex align-items-center justify-content-between flex-wrap gap-3">
-    <a href="index.html" class="ph-logo">Power<span>Hub</span>.</a>
-    <div class="flex-grow-1 mx-4" style="max-width:480px;">
-      <input class="ph-search w-100" type="text" placeholder="Search protein, dumbbells, mats...">
-    </div>
-    <nav class="ph-nav d-flex align-items-center">
-      <a href="index.html">Home</a>
-      <a href="shop.html">Shop</a>
-      <a href="help.html">Help</a>
-      <a href="login.html">Login</a>
-      <a href="cart.html">Cart <span class="ph-cart-count">3</span></a>
-    </nav>
-  </div>
-</header>
-
-<main class="container my-4">
-  <h2 class="ph-section-title h3">Your Cart</h2>
-
-  <div class="row g-4">
-    <div class="col-lg-8">
-      <div class="ph-panel">
-
-        <div class="d-flex gap-3 pb-3 mb-3 border-bottom" style="border-color:var(--ph-line)!important;">
-          <div class="ph-card-media" style="background:#2a2f22;width:110px;height:90px;border-radius:6px;flex:none;">
-            <img src="wheyprotein.png" alt="Whey Protein" class="product-image">
-          </div>
-          <div class="flex-grow-1">
-            <div class="fw-semibold">Gold Whey Protein — 1kg</div>
-            <div class="text-body-secondary small">IronFuel · Chocolate</div>
-            <span class="badge mt-1" style="background:var(--ph-green);color:#0e1b12;">In stock</span>
-          </div>
-          <div class="text-end">
-            <select class="ph-search" style="width:70px;padding:6px;"><option>1</option><option>2</option><option>3</option></select>
-            <div class="mt-2">₹1,899</div>
-            <a href="#" class="text-body-secondary small">Remove</a>
-          </div>
-        </div>
-
-        <div class="d-flex gap-3 pb-3 mb-3 border-bottom" style="border-color:var(--ph-line)!important;">
-          <div class="ph-card-media" style="background:#232a30;width:110px;height:90px;border-radius:6px;flex:none;">
-            <img src="dumbell.png" alt="Adjustable Dumbbells" class="product-image">
-          </div>
-          <div class="flex-grow-1">
-            <div class="fw-semibold">Adjustable Dumbbell Set — 20kg</div>
-            <div class="text-body-secondary small">GripWorks · Pair</div>
-            <span class="badge mt-1" style="background:var(--ph-green);color:#0e1b12;">In stock</span>
-          </div>
-          <div class="text-end">
-            <select class="ph-search" style="width:70px;padding:6px;"><option>1</option><option>2</option></select>
-            <div class="mt-2">₹3,299</div>
-            <a href="#" class="text-body-secondary small">Remove</a>
-          </div>
-        </div>
-
-        <div class="d-flex gap-3">
-          <div class="ph-card-media" style="background:#2a2620;width:110px;height:90px;border-radius:6px;flex:none;">
-            <img src="creatine.png" alt="Micronised Creatine" class="product-image">
-          </div>
-          <div class="flex-grow-1">
-            <div class="fw-semibold">Micronised Creatine — 300g</div>
-            <div class="text-body-secondary small">IronFuel · Unflavoured</div>
-            <span class="badge mt-1" style="background:var(--ph-green);color:#0e1b12;">In stock</span>
-          </div>
-          <div class="text-end">
-            <select class="ph-search" style="width:70px;padding:6px;"><option>1</option><option>2</option></select>
-            <div class="mt-2">₹999</div>
-            <a href="#" class="text-body-secondary small">Remove</a>
-          </div>
-        </div>
-
+  <header class="ph-header">
+    <div class="container d-flex align-items-center justify-content-between flex-wrap gap-3">
+      <a href="index.html" class="ph-logo">Power<span>Hub</span>.</a>
+      <div class="flex-grow-1 mx-4" style="max-width:480px;">
+        <input class="ph-search w-100" type="text" placeholder="Search protein, dumbbells, mats...">
       </div>
-      <a href="shop.html" class="btn-ph btn-ph-outline mt-3 d-inline-block">← Continue Shopping</a>
+      <nav class="ph-nav d-flex align-items-center">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="help.html">Help</a>
+        <a href="login.html">Login</a>
+        <a href="cart.html">Cart <span class="ph-cart-count">3</span></a>
+      </nav>
     </div>
+  </header>
 
-    <div class="col-lg-4">
-      <div class="ph-panel">
-        <h3 class="h5">Order Summary</h3>
-        <p class="small mb-3" style="color:var(--ph-green);">You've unlocked FREE shipping 🎉</p>
-        <div class="ph-row"><span>Subtotal (3 items)</span><span>₹6,197</span></div>
-        <div class="ph-row"><span>Discount</span><span style="color:var(--ph-yellow);">− ₹800</span></div>
-        <div class="ph-row"><span>Delivery</span><span style="color:var(--ph-green);">FREE</span></div>
-        <div class="ph-row total"><span>Total</span><span>₹5,397</span></div>
+  <main class="container my-4">
+    <h2 class="ph-section-title h3">Your Cart</h2>
 
-        <div class="ph-field mt-3">
-          <div class="d-flex gap-2">
-            <input type="text" placeholder="Coupon code">
-            <button class="btn-ph btn-ph-outline">Apply</button>
+    <div class="row g-4">
+      <div class="col-lg-8">
+        <div class="ph-panel">
+
+          <div class="d-flex gap-3 pb-3 mb-3 border-bottom" style="border-color:var(--ph-line)!important;">
+            <div class="ph-card-media" style="background:#2a2f22;width:110px;height:90px;border-radius:6px;flex:none;">
+              <img src="assets/wheyprotein.png" alt="Whey Protein" class="product-image">
+            </div>
+            <div class="flex-grow-1">
+              <div class="fw-semibold">Gold Whey Protein — 1kg</div>
+              <div class="text-body-secondary small">IronFuel · Chocolate</div>
+              <span class="badge mt-1" style="background:var(--ph-green);color:#0e1b12;">In stock</span>
+            </div>
+            <div class="text-end">
+              <select class="ph-search" style="width:70px;padding:6px;">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+              <div class="mt-2">₹1,899</div>
+              <a href="#" class="text-body-secondary small">Remove</a>
+            </div>
           </div>
-        </div>
 
-        <button class="btn-ph btn-ph-solid w-100 mt-3">Proceed to Checkout</button>
-        <p class="text-center small text-body-secondary mt-2">🔒 Safe &amp; secure checkout</p>
+          <div class="d-flex gap-3 pb-3 mb-3 border-bottom" style="border-color:var(--ph-line)!important;">
+            <div class="ph-card-media" style="background:#232a30;width:110px;height:90px;border-radius:6px;flex:none;">
+              <img src="assets/dumbell.png" alt="Adjustable Dumbbells" class="product-image">
+            </div>
+            <div class="flex-grow-1">
+              <div class="fw-semibold">Adjustable Dumbbell Set — 20kg</div>
+              <div class="text-body-secondary small">GripWorks · Pair</div>
+              <span class="badge mt-1" style="background:var(--ph-green);color:#0e1b12;">In stock</span>
+            </div>
+            <div class="text-end">
+              <select class="ph-search" style="width:70px;padding:6px;">
+                <option>1</option>
+                <option>2</option>
+              </select>
+              <div class="mt-2">₹3,299</div>
+              <a href="#" class="text-body-secondary small">Remove</a>
+            </div>
+          </div>
+
+          <div class="d-flex gap-3">
+            <div class="ph-card-media" style="background:#2a2620;width:110px;height:90px;border-radius:6px;flex:none;">
+              <img src="assets/creatine.png" alt="Micronised Creatine" class="product-image">
+            </div>
+            <div class="flex-grow-1">
+              <div class="fw-semibold">Micronised Creatine — 300g</div>
+              <div class="text-body-secondary small">IronFuel · Unflavoured</div>
+              <span class="badge mt-1" style="background:var(--ph-green);color:#0e1b12;">In stock</span>
+            </div>
+            <div class="text-end">
+              <select class="ph-search" style="width:70px;padding:6px;">
+                <option>1</option>
+                <option>2</option>
+              </select>
+              <div class="mt-2">₹999</div>
+              <a href="#" class="text-body-secondary small">Remove</a>
+            </div>
+          </div>
+
+        </div>
+        <a href="shop.html" class="btn-ph btn-ph-outline mt-3 d-inline-block">← Continue Shopping</a>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="ph-panel">
+          <h3 class="h5">Order Summary</h3>
+          <p class="small mb-3" style="color:var(--ph-green);">You've unlocked FREE shipping 🎉</p>
+          <div class="ph-row"><span>Subtotal (3 items)</span><span>₹6,197</span></div>
+          <div class="ph-row"><span>Discount</span><span style="color:var(--ph-yellow);">− ₹800</span></div>
+          <div class="ph-row"><span>Delivery</span><span style="color:var(--ph-green);">FREE</span></div>
+          <div class="ph-row total"><span>Total</span><span>₹5,397</span></div>
+
+          <div class="ph-field mt-3">
+            <div class="d-flex gap-2">
+              <input type="text" placeholder="Coupon code">
+              <button class="btn-ph btn-ph-outline">Apply</button>
+            </div>
+          </div>
+
+          <button class="btn-ph btn-ph-solid w-100 mt-3">Proceed to Checkout</button>
+          <p class="text-center small text-body-secondary mt-2">🔒 Safe &amp; secure checkout</p>
+        </div>
       </div>
     </div>
-  </div>
-</main>
+  </main>
 
-<footer class="ph-footer">
-  <div class="container">
-    <div class="ph-fine text-center">© 2026 PowerHub Retail Pvt. Ltd. · Built with HTML, CSS &amp; Bootstrap.</div>
-  </div>
-</footer>
+  <footer class="ph-footer">
+    <div class="container">
+      <div class="ph-fine text-center">© 2026 PowerHub Retail Pvt. Ltd. · Built with HTML, CSS &amp; Bootstrap.</div>
+    </div>
+  </footer>
 
 </body>
+
 </html>
